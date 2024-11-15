@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing recommendation</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+<div class="container">
+<h1>Weather Clothing Recommendation</h1>
+<p>Select a city to get clothing recommendations based on the weather:</p>
+<select id="citySelect">
+    <option value="Copenhagen">Copenhagen</option>
+    <option value="London">London</option>
+    <option value="Tokyo">Tokyo</option>
+    <option value="Paris">Paris</option>
+    <option value="Sydney">Sydney</option>
+</select>
+<br>
+<button id="getRecommendationBtn">Get Recommendation</button>
+
+<div id="result" class="result" style="display: none;">
+    <h2>Recommendation</h2>
+    <p><strong>City:</strong> <span id="resultCity"></span></p>
+    <p><strong>Weather:</strong> <span id="resultWeather"></span></p>
+    <p><strong>Temperature:</strong> <span id="resultTemperature"></span>°C</p>
+    <p><strong>Recommendation:</strong> <span id="resultRecommendation"></span></p>
+</div>
+</div>
+
+<script type="module" src="../js/clothingrecommendation.js"></script>
+
+</body>
+</html>
